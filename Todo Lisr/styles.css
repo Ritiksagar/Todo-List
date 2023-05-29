@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(225, 247, 247);
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(#aad8e6, #c4bdca);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-btn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#add-btn:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+.space {
+  margin-left: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background-color: #ff5252;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1744;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+#completed-tasks {
+  margin-top: 10px;
+}
+
+.completed-task {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+#completed-tasks {
+  margin-top: 10px;
+}
+
+.completed-task {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.input-container,
+#status,
+#todo-list,
+#clear-btn,
+#completed-tasks {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.input-container {
+  animation-name: slideIn;
+}
+
+#status,
+#todo-list,
+#clear-btn {
+  animation-name: fadeIn;
+}
+
+#completed-tasks {
+  animation-name: slideDown;
+}
+
+li {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+li:nth-child(odd) {
+  animation-name: slideIn;
+}
+
+li:nth-child(even) {
+  animation-name: scaleIn;
+}
